@@ -1,0 +1,16 @@
+gospelcenter_simple_homepage:
+    path:     /
+    defaults: { _controller: gospelcenterSimpleBundle:Default:index }
+
+
+gospelcenter_simple_cote:
+    path:     /lacote
+    defaults: { _controller: gospelcenterSimpleBundle:Default:cote }
+
+gospelcenter_simple_beroche:
+    path:     /beroche
+    defaults: { _controller: gospelcenterSimpleBundle:Default:beroche }
+
+gospelcenter_simple_fribourg:
+    path:     /fribourg
+    defaults: { _controller: gospelcenterSimpleBundle:Default:fribourg }

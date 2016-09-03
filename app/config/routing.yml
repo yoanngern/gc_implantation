@@ -1,0 +1,3 @@
+gospelcenter_simple:
+    resource: "@gospelcenterSimpleBundle/Resources/config/routing.yml"
+    prefix:   /

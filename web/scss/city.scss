@@ -1,0 +1,60 @@
+section {
+
+    &#home {
+        text-align: center;
+
+        h2 {
+            color: $whiteGC;
+            font-family: $font-black;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 10%;
+            z-index: 100;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+
+        &.cote {
+            background-image: url('../images/la_cote.jpg');
+
+            .logo {
+                background-image: url('../images/logo_gc_cote.svg');
+            }
+        }
+
+        &.beroche {
+            background-image: url('../images/beroche.jpg');
+
+            .logo {
+                background-image: url('../images/logo_gc_beroche.svg');
+            }
+        }
+
+        &.fribourg {
+            background-image: url('../images/fribourg.jpg');
+
+            .logo {
+                background-image: url('../images/logo_gc_fribourg.svg');
+            }
+        }
+
+        .logo {
+            display: block;
+            width: 274px;
+            height: 114px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            text-align: center;
+            margin: 0 auto 30px;
+        }
+
+    }
+
+    &#desc {
+
+    }
+
+}

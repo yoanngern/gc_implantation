@@ -1,0 +1,567 @@
+@import "reset";
+@import "functions";
+@import "color";
+@import "font";
+@import "city";
+
+body {
+    font-family: $font-regular;
+    color: $blackGC;
+    background-color: $blackGC;
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+
+    p {
+        font-size: 0.85em;
+        font-family: $font-light;
+        color: $whiteGC;
+
+
+    }
+
+    p, h1, h2, h3 {
+        span {
+            white-space: nowrap;
+        }
+    }
+
+
+}
+
+header {
+    background-color: $blackGC;
+    nav {
+        ul {
+            text-align: center;
+            li {
+
+                display: inline-block;
+                padding: 10px 5px;
+                a {
+                    color: $whiteGC;
+                    text-transform: uppercase;
+                    padding: 2px 5px 2px;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 0.75em;
+                    line-height: 20px;
+
+                    &:hover {
+                        border-bottom: 2px solid $whiteGC;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+div.video-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+
+    video {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        min-width: 100%;
+        z-index: 1
+    }
+}
+
+section {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font-black;
+        color: $whiteGC;
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        color: $whiteGC;
+        text-align: center;
+        font-size: 1.15em;
+        text-transform: uppercase;
+        font-family: $font-bold;
+        letter-spacing: 1px;
+
+        div {
+            display: inline-block;
+            border: 2px solid $whiteGC;
+            padding: 5px 20px;
+        }
+    }
+
+    div.button {
+        text-align: center;
+
+        a {
+            display: inline-block;
+            border: 2px solid $whiteGC;
+            padding: 5px 20px;
+            font-size: 1.1em;
+            color: $whiteGC;
+            text-decoration: none;
+
+            &:hover {
+                padding: 7px 22px;
+                border: none;
+                background-color: $whiteGC;
+                color: $blackGC;
+            }
+        }
+    }
+
+    button {
+        display: inline-block;
+        border: 2px solid $blackGC;
+        padding: 5px 20px;
+        font-size: 1.1em;
+        color: $blackGC;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            padding: 7px 22px;
+            border: none;
+            background-color: $blackGC;
+            color: $whiteGC;
+        }
+    }
+
+    article.content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    div.col2 {
+        margin: 40px auto;
+        text-align: left;
+
+        div.left,
+        div.right {
+            display: inline-block;
+            //max-width: 350px;
+            width: 46%;
+            vertical-align: top;
+            margin: 0 2%;
+        }
+
+        h2 {
+            font-family: $font-bold;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            color: $blackGC;
+            text-align: left;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: $font-bold;
+            font-size: 0.85em;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        p {
+            padding-bottom: 50px;
+            text-align: left;
+            color: $blackGC;
+        }
+
+        div.video {
+            width: 100%;
+            display: block;
+            height: 0;
+            position: relative;
+            padding-bottom: 56.2%;
+            margin-bottom: 30px;
+        }
+
+        span.signature {
+            font-family: $font-bold;
+            font-size: 0.75em;
+            text-align: right;
+            display: block;
+            margin-right: 25px;
+        }
+    }
+
+    div.center {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    &#home {
+        background-image: url('../images/fribourg.jpg');
+        min-height: 500px;
+        min-height: 37.5rem;
+        height: 90%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        div.center {
+            z-index: 100;
+        }
+    }
+
+    &#vision,
+    &#pres {
+        background-color: $greenGC;
+        background-image: url("../images/motif.png");
+        background-repeat: repeat;
+        background-size: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    &#vision {
+
+        h2 {
+            font-size: 1.1em;
+            text-transform: uppercase;
+            font-family: $font-bold;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        div.vision {
+            border: 3px solid $whiteGC;
+            display: inline-block;
+            text-align: center;
+            padding: 15px 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            line-height: 1.6em;
+        }
+
+        p {
+            line-height: 1.6em;
+        }
+    }
+
+    &#ppp,
+    &#start {
+
+        height: 500px;
+
+        h2 {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        p {
+            text-align: center;
+            color: $whiteGC;
+            padding-bottom: 20px;
+        }
+    }
+
+    &#ppp {
+        background-image: url('../images/louange.jpg');
+    }
+
+    &#start {
+        background-image: url('../images/louange.jpg');
+        min-height: 500px;
+
+        article.content {
+            width: 480px;
+        }
+
+        div.video {
+            width: 100%;
+            display: block;
+            height: 0;
+            position: relative;
+            padding-bottom: 56.2%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &.infos {
+        padding: 20px 0 80px;
+
+        &#beroche {
+            background-image: url('../images/beroche.jpg');
+        }
+
+        &#la_cote {
+            background-image: url('../images/la_cote.jpg');
+        }
+
+        &#fribourg {
+            background-image: url('../images/fribourg.jpg');
+        }
+
+        h2 {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        div.box {
+            border: 3px solid $whiteGC;
+
+            padding: 0 0 20px 0;
+
+            div.info {
+                width: 28%;
+                margin: 20px 2% 20px 2%;
+                display: inline-block;
+                text-align: center;
+                vertical-align: top;
+
+                &:first-of-type {
+                    margin-left: 4%;
+                }
+
+                &:last-of-type {
+                    margin-right: 4%;
+                }
+
+                .icon {
+                    display: inline-block;
+                    width: 80px;
+                    height: 80px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    text-align: center;
+                    margin: 20px 0;
+
+                    &#i {
+                        background-image: url("../images/icon_i.svg");
+                    }
+
+                    &#map {
+                        background-image: url("../images/icon_map.svg");
+                    }
+
+                    &#time {
+                        background-image: url("../images/icon_time.svg");
+                    }
+                }
+
+            }
+        }
+    }
+
+    &.city {
+        height: 400px;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        .logo {
+            display: block;
+            width: 240px;
+            height: 114px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            text-align: center;
+            margin: 0 auto 30px;
+        }
+    }
+
+    &#fribourg {
+        background-image: url('../images/fribourg.jpg');
+
+        .logo {
+            background-image: url('../images/logo_gc_fribourg.svg');
+        }
+    }
+
+    &#beroche {
+        background-image: url('../images/beroche.jpg');
+
+        .logo {
+            background-image: url('../images/logo_gc_beroche.svg');
+        }
+    }
+
+    &#cote {
+        background-image: url('../images/la_cote.jpg');
+
+        .logo {
+            background-image: url('../images/logo_gc_cote.svg');
+        }
+    }
+
+    &#email {
+        background-color: $whiteGC;
+        color: $blackGC;
+        min-height: 400px;
+
+        h2 {
+            color: $blackGC;
+        }
+
+        form {
+            text-align: center;
+
+            label {
+                margin-top: 30px;
+                display: block;
+                font-size: 0.85em;
+            }
+
+            .g-recaptcha {
+                text-align: center;
+
+                div {
+                    margin: 10px auto;
+                    display: block;
+                }
+            }
+
+            input {
+                background-color: $grayGC;
+                border: none;
+                outline: none;
+                line-height: 30px;
+                font-size: 18px;
+                text-align: center;
+                margin: 10px 0 20px;
+                width: 90%;
+                max-width: 300px;
+                color: $whiteGC;
+                padding: 10px 5px;
+            }
+        }
+
+    }
+}
+
+footer {
+    & > div {
+        margin: 0 auto 50px;
+        width: 100%;
+        max-width: 940px;
+
+        h1 {
+            text-align: center;
+            font-family: $font-thin;
+            font-size: 1.2em;
+            line-height: 1.2em;
+            text-transform: uppercase;
+            padding-top: 60px;
+            padding-bottom: 30px;
+            letter-spacing: 2px;
+            color: $whiteGC;
+        }
+
+        div.button {
+            text-align: center;
+            display: block;
+
+            a {
+                background-color: $whiteGC;
+                color: $blackGC;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 1.1em;
+                padding: 5px 20px;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $whiteGC;
+                    padding: 3px 18px;
+                    border: 2px solid $whiteGC;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    section {
+
+        &#home {
+            .video-bg {
+                display: none;
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    section {
+
+        article.content {
+            width: 94%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        div.col2 {
+            div.left,
+            div.right {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    section {
+
+        &.infos {
+
+            div.box {
+                border: none;
+                div.info {
+                    width: 100%;
+                    margin: 10px 0 !important;
+                    //border: 2px solid $whiteGC;
+                }
+            }
+
+        }
+
+        div.center {
+            width: 94%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        &#start article.content {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+}

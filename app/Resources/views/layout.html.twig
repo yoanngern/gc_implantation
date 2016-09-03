@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Gospel Center</title>
+
+    <meta name="description" content="{% block desc %}A PLACE WHERE MIRACLES HAPPEN!{% endblock %}">
+
+    <meta name="viewport"
+          content="initial-scale=1, width=device-width, minimum-scale=1, user-scalable=no, maximum-scale=1, width=device-width, minimal-ui">
+
+    <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}"/>
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}"/>
+
+    {% block stylesheet %}
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css"/>
+    {% endblock %}
+
+    {% block javascript %}
+        <script type="text/javascript" src="{{ asset('js/main.min.js') }}"></script>
+    {% endblock %}
+
+    <script type="application/javascript">
+
+    </script>
+
+
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul>
+            <li><a target="_blank" href="http://gc-lausanne.org">Lausanne</a></li>
+            <li><a target="_blank" href="http://gc-jura.org">Jura</a></li>
+            <li><a target="_blank" href="http://gc-annecy.org">Annecy</a></li>
+            <li><a href="http://www.gospel-center-montreux.org" target="_blank">Montreux</a></li>
+            <li><a href="{{ path('gospelcenter_simple_beroche') }}">La Béroche</a></li>
+            <li><a href="{{ path('gospelcenter_simple_cote') }}">La Côte</a></li>
+            <li><a href="{{ path('gospelcenter_simple_fribourg') }}">Fribourg</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+{% block body %}{% endblock %}
+
+<footer>
+    <div>
+        <h1>A place where <span>miracles happen!</span></h1>
+
+        <!--
+        <div class="button"><a href="">Soutenir ce mouvement</a></div>
+        -->
+
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}{{ parent() }}{% endblock %}
+
+
+{% block body %}
+
+    {% spaceless %}
+
+        <section id="home">
+
+            <div class="center">
+                <h1>It's time for <span>something more</span></h1>
+                <div class="button"><a href="#start">Regarder la vidéo</a></div>
+            </div>
+
+            <div class="video-bg">
+                <video id="bgvid" autoplay loop>
+
+                    <source src="https://player.vimeo.com/external/181289916.hd.mp4?s=250cdab317603940c7f46f57779b08a24a2a8c55&profile_id=174"
+                            type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <section id="vision">
+            <article class="content">
+                <h2>La vision / le mouvement</h2>
+                <div class="vision">
+                    <p><span>« Notre</span> rêve est de favoriser<br/>
+                        un mouvement de réveil<br/>
+                        en Europe et dans le <span>monde »</span></p>
+                </div>
+                <div class="col2">
+                    <div class="left">
+                        <p>Le <span>« Mouvement</span> Gospel <span>Wave »</span>, Mouvement de l’Evangile, est le fruit d’une vision portée par
+                            une Equipe apostolique à Oron. Sous la direction de Werner Lehmann, apôtre principal, cette
+                            équipe est basée sur les principes bibliques d’une équipe de ministères travaillant
+                            prioritairement à l’annonce de l’Evangile en Suisse, en Europe et dans les nations.</p>
+                    </div>
+                    <div class="right">
+
+                        <p>Elle vise à encourager et inspirer les églises et ministères ainsi que favoriser
+                            le démarage de communautés dynamiques, charismatiques et multigénérationnelles, ceci au
+                            travers de formations et de coaching. Plusieurs fois par année, des
+                            rencontres et conférences sont mises sur pied afin d’inspirer
+                            et amener les ressources du Ciel sur la terre.</p>
+                        <span class="signature">L'EQUIPE APOSTOLIQUE</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="start">
+            <div class="center">
+
+                <h2><div>Lancement de 3 nouveaux <span>Gospel Center</span></div></h2>
+
+                <article class="content">
+                    <div class="video">
+                        <iframe width="100%" height="100%"
+                                src="https://www.youtube.com/embed/iEI7TMocguE?rel=0&amp;showinfo=0" frameborder="0"
+                                allowfullscreen></iframe>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="beroche" class="city">
+            <div class="center">
+                <div class="logo"></div>
+                <div class="button"><a href="{{ path('gospelcenter_simple_beroche') }}">En savoir plus</a></div>
+            </div>
+        </section>
+
+        <section id="cote" class="city">
+            <div class="center">
+                <div class="logo"></div>
+                <div class="button"><a href="{{ path('gospelcenter_simple_cote') }}">En savoir plus</a></div>
+            </div>
+        </section>
+
+        <section id="fribourg" class="city">
+            <div class="center">
+                <div class="logo"></div>
+                <div class="button"><a href="{{ path('gospelcenter_simple_fribourg') }}">En savoir plus</a></div>
+            </div>
+        </section>
+
+    {% endspaceless %}
+
+{% endblock %}
