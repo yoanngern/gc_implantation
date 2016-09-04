@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Gospel Center</title>
+    <title>{% block title %}Gospel Center{% endblock %}</title>
 
     <meta name="description" content="{% block desc %}A PLACE WHERE MIRACLES HAPPEN!{% endblock %}">
 
@@ -35,7 +35,7 @@
             <li><a target="_blank" href="http://gc-lausanne.org">Lausanne</a></li>
             <li><a target="_blank" href="http://gc-jura.org">Jura</a></li>
             <li><a target="_blank" href="http://gc-annecy.org">Annecy</a></li>
-            <li><a href="http://www.gospel-center-montreux.org" target="_blank">Montreux</a></li>
+            <li><a href="http://gospelcentermontreux.com" target="_blank">Montreux</a></li>
             <li><a href="{{ path('gospelcenter_simple_beroche') }}">La Béroche</a></li>
             <li><a href="{{ path('gospelcenter_simple_cote') }}">La Côte</a></li>
             <li><a href="{{ path('gospelcenter_simple_fribourg') }}">Fribourg</a></li>
