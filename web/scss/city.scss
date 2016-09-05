@@ -5,7 +5,7 @@ section {
 
         h2 {
             color: $whiteGC;
-            font-family: $font-black;
+            font-family: $font-bold;
             font-size: 1.1em;
             text-transform: uppercase;
             position: absolute;
@@ -42,8 +42,8 @@ section {
 
         .logo {
             display: block;
-            width: 274px;
-            height: 114px;
+            width: 340px;
+            height: 134px;
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;

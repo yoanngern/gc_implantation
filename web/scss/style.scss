@@ -17,7 +17,6 @@ body {
         font-family: $font-light;
         color: $whiteGC;
 
-
     }
 
     p, h1, h2, h3 {
@@ -25,7 +24,6 @@ body {
             white-space: nowrap;
         }
     }
-
 
 }
 
@@ -283,6 +281,10 @@ section {
 
     &#ppp {
         background-image: url('../images/louange.jpg');
+
+        p:last-of-type {
+            margin-bottom: 40px;
+        }
     }
 
     &#start {
@@ -341,6 +343,13 @@ section {
 
                 &:last-of-type {
                     margin-right: 4%;
+                }
+
+                h3 {
+                    color: $whiteGC;
+                    padding-bottom: 12px;
+                    font-size: 1em;
+                    font-family: $font-regular;
                 }
 
                 .icon {
@@ -416,10 +425,33 @@ section {
     &#email {
         background-color: $whiteGC;
         color: $blackGC;
-        min-height: 400px;
+        min-height: 500px;
 
         h2 {
             color: $blackGC;
+        }
+
+        p {
+            text-align: center;
+            color: $blackGC;
+            margin-top: 50px;
+            font-size: 0.85em;
+            font-family: $font-regular;
+        }
+
+        div.button {
+            margin-top: 10px;
+
+            a {
+                border: 2px solid $blackGC;
+                color: $blackGC;
+
+                &:hover {
+                    border: none;
+                    background-color: $blackGC;
+                    color: $whiteGC;
+                }
+            }
         }
 
         form {
